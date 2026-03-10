@@ -1,7 +1,7 @@
 """Página 1: Dashboard completo con filtros.
 
-Ilustra: st.sidebar, st.multiselect, st.slider, st.metric, st.plotly_chart,
-         st.columns, @st.cache_data, Polars + Plotly.
+Ilustra: st.sidebar, st.multiselect, st.slider, st.metric, st.pyplot,
+         st.columns, @st.cache_data, Polars + Matplotlib/Seaborn.
 """
 
 import streamlit as st
@@ -70,9 +70,9 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.plotly_chart(linea_ventas(df_f), use_container_width=True)
+    st.pyplot(linea_ventas(df_f))
 
 with col2:
-    st.plotly_chart(barras_region(df_f), use_container_width=True)
+    st.pyplot(barras_region(df_f))
 
-st.plotly_chart(barras_producto(df_f), use_container_width=True)
+st.plotly_chart(barras_producto(df_f))

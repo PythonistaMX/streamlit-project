@@ -25,7 +25,7 @@ curso **py311**.
 
 Demuestra los conceptos clave:
 - Carga y procesamiento con **Polars** (rápido, sin conversión innecesaria)
-- Visualizaciones interactivas con **Plotly**
+- Visualizaciones con **Matplotlib** y **Seaborn**
 - *Widgets* de *Streamlit*: `slider`, `multiselect`, `metric`, `dataframe`
 - *Caching* con `@st.cache_data`
 - *Layout* con columnas y barra lateral
@@ -58,7 +58,7 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.plotly_chart(barras_region(df), use_container_width=True)
+    st.pyplot(barras_region(df))
 
 with col2:
     st.subheader("Resumen por región")
