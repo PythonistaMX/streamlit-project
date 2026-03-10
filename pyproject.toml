@@ -1,0 +1,18 @@
+[tool.ruff]
+line-length    = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]   # errores, pyflakes, isort, pyupgrade
+ignore = ["E501"]                 # líneas largas ya controladas por line-length
+
+[tool.ruff.lint.per-file-ignores]
+"pages/*.py" = ["E402"]           # imports fuera de orden en páginas Streamlit (st.set_page_config primero)
+
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+addopts      = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["src"]
+omit   = ["tests/*"]

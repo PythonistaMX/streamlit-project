@@ -206,4 +206,5 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Temporary data files, such as those generated during development or testing, can be ignored to prevent cluttering the repository with large or unnecessary files.
 data_tmp/
