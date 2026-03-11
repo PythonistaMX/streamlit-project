@@ -18,7 +18,7 @@ streamlit-project/
 │   └── 3_datos.py      # tabla interactiva y descarga CSV/Parquet
 ├── src/
 │   ├── datos.py        # generación de datos con Polars (sin streamlit)
-│   └── graficos.py     # figuras Plotly (sin streamlit)
+│   └── graficos.py     # figuras Matplotlib/Seaborn (sin streamlit)
 ├── tests/
 │   ├── test_datos.py
 │   └── test_graficos.py
@@ -64,9 +64,9 @@ pytest --cov=src --cov-report=term-missing
 | `st.set_page_config` | Todas las páginas |
 | `st.metric` | `app.py`, `pages/1_dashboard.py` |
 | `st.dataframe` con Polars | `pages/3_datos.py` |
-| `st.plotly_chart` | `pages/1_dashboard.py`, `pages/2_exploracion.py` |
+| `st.pyplot` | `pages/1_dashboard.py`, `pages/2_exploracion.py`, `app.py` |
 | `st.sidebar` + widgets | `pages/1_dashboard.py` |
 | `st.tabs` + `st.expander` | `pages/2_exploracion.py` |
 | `st.download_button` | `pages/3_datos.py` |
 | `@st.cache_data` | Todas las páginas |
-| Polars → Plotly → Streamlit | `src/datos.py` + `src/graficos.py` |
+| Polars → Matplotlib/Seaborn → Streamlit | `src/datos.py` + `src/graficos.py` |

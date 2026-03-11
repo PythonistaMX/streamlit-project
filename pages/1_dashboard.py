@@ -75,4 +75,4 @@ with col1:
 with col2:
     st.pyplot(barras_region(df_f))
 
-st.plotly_chart(barras_producto(df_f))
+st.pyplot(barras_producto(df_f))
