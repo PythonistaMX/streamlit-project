@@ -1,6 +1,6 @@
 """Página de inicio del dashboard de ventas.
 
-Ilustra los conceptos del notebook N38: Introducción a Streamlit.
+Ilustra los conceptos del notebook N39: Introducción a Streamlit.
 
 Para ejecutar:
     streamlit run app.py
@@ -20,7 +20,7 @@ st.set_page_config(
 st.title("📊 Dashboard de Ventas")
 st.markdown(
     """
-Aplicación de ejemplo que ilustra el notebook **N38 — Introducción a Streamlit** del
+Aplicación de ejemplo que ilustra el notebook **N39 — Introducción a Streamlit** del
 curso **py311**.
 
 Demuestra los conceptos clave:

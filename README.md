@@ -1,6 +1,6 @@
-# Dashboard de Ventas — py311 / N38
+# Dashboard de Ventas — py311 / N39
 
-Aplicación de ejemplo que ilustra el notebook **N38 — Introducción a Streamlit**
+Aplicación de ejemplo que ilustra el notebook **N39 — Introducción a Streamlit**
 del curso [py311](https://github.com/josechval/py311).
 
 ## Estructura del proyecto
@@ -57,7 +57,7 @@ pytest --cov=src --cov-report=term-missing
 3. Seleccionar `app.py` como archivo principal.
 4. Streamlit Cloud detecta cada push a `main` y redesplega automáticamente.
 
-## Conceptos ilustrados (N38)
+## Conceptos ilustrados (N39)
 
 | Concepto | Dónde |
 | :--- | :--- |
