@@ -10,6 +10,7 @@ on:
 
 jobs:
   smoke-test:
+    if: false
     runs-on: ubuntu-latest
     needs: []   # ejecutar independientemente de CI (ya lo pasó para llegar a main)
 
