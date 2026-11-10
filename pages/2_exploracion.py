@@ -42,15 +42,15 @@ with tab2:
     st.pyplot(histograma_ventas(df_f))
 
     with st.expander("Estadísticas descriptivas"):
-        st.dataframe(df_f.select("ventas", "clientes").describe(), use_container_width=True)
+        st.dataframe(df_f.select("ventas", "clientes").describe(), width="stretch")
 
 with tab3:
     col1, col2 = st.columns(2)
 
     with col1:
         st.subheader("Por región")
-        st.dataframe(resumen_por_region(df_f), use_container_width=True)
+        st.dataframe(resumen_por_region(df_f), width="stretch")
 
     with col2:
         st.subheader("Por producto")
-        st.dataframe(resumen_por_producto(df_f), use_container_width=True)
+        st.dataframe(resumen_por_producto(df_f), width="stretch")

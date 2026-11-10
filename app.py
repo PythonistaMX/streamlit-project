@@ -62,4 +62,4 @@ with col1:
 
 with col2:
     st.subheader("Resumen por región")
-    st.dataframe(resumen_por_region(df), use_container_width=True)
+    st.dataframe(resumen_por_region(df), width="stretch")
