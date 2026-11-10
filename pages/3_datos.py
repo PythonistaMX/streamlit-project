@@ -41,7 +41,7 @@ descendente = st.sidebar.checkbox("Descendente", value=False)
 df_ordenado = df.sort(orden, descending=descendente)
 
 st.subheader(f"Mostrando {n_filas} de {len(df)} registros")
-st.dataframe(df_ordenado.head(n_filas), use_container_width=True)
+st.dataframe(df_ordenado.head(n_filas), width="stretch")
 
 st.markdown("---")
 
@@ -74,7 +74,7 @@ with col2:
         data=datos,
         file_name=nombre,
         mime=mime,
-        use_container_width=True,
+        width="stretch",
     )
 
 # ── Schema ────────────────────────────────────────────────────────────────────
@@ -86,4 +86,4 @@ with st.expander("Schema del DataFrame (Polars)"):
             "nulos": df.null_count().row(0),
         }
     )
-    st.dataframe(schema_df, use_container_width=True)
+    st.dataframe(schema_df, width="stretch")
